@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="icon" href="images/happy.png">
+    <link rel = "stylesheet" href = "style.css">
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <div class="nav-bar">
+                <nav>
+                    <p>MA PORTFOLIO</p>
+                    <ul>
+                        <li><a href = "#about">About Me</a></li>
+                        <li><a href = "#my-skills">My Skills</a></li>
+                        <li><a href = "#contact">Contact Me</a></li>
+                        
+                    </ul>
+                </nav>
+                <div class="content-home">
+                    <div class="header-text">
+                        
+                        <h1>Hi, I am <span>Brundhakshitha</span></h1>
+
+                        <p>Full Stack Web Developer</p>
+                    </div>
+                    
+                    <div class = "home-img">
+                        <img src="images/intropage.jpg" class = "intro-img">
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- About meee -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/aboutme.jpg" alt="my pic">
+                </div>
+    
+                <div class="about-col-2">
+                    <h1 class="subtitle-me">About Me</h1>
+                    <p class = "para-about">
+                        Hi, I'm a passionate and dedicated engineering student currently in my third year, specializing in full-stack web development and Java programming. With a strong foundation in data structures and algorithms using Java, I’m actively working on enhancing my problem-solving skills and building robust, user-friendly web applications using modern JavaScript frameworks and tools.
+                    </p>
+    
+                    <!-- Tab Navigation -->
+                    <div class="tab-titles">
+                        
+                        <p class="tab-links active-link" onclick="openTab('experience')">Experience</p>
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                    </div>
+    
+                    <!-- Tab Contents -->
+                    
+                    <div class="tab-contents active-tab" id="experience">
+                        <ul>
+                            <li><span>Intern</span><br>In Latavya Technologies based on IoT.</li>
+                            <li><span>Research Paper</span><br>On Industry 4.0 Revolution</li>
+                            <li><span>Hands On Project</span><br>Working on Traffic Management project.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>High Schooler</span><br>In Sir MV Pre University.</li>
+                            <li><span>B.E. in Artificial Intelligence and Data Science.</span><br>In Nitte Meenakshi Institute Of Technology.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<!-- SKILLSSS -->
+
+<div id="my-skills">
+    <div class="skillwhole-container">
+        <h2 class="subtitle-skills">My Skills</h2>
+        <div class="skills-container">
+            <!-- Skill Block 1: HTML -->
+            <div class="skill-block">
+                <img src="images/html-logo.png" alt="HTML Logo" class="skill-logo">
+                <p>HTML</p>
+            </div>
+            <!-- Skill Block 2: CSS -->
+            <div class="skill-block">
+                <img src="images/css-logo.jpeg" alt="CSS Logo" class="skill-logo">
+                <p>CSS</p>
+            </div>
+            <!-- Skill Block 3: JavaScript -->
+            <div class="skill-block">
+                <img src="images/js-logo.jpeg" alt="JavaScript Logo" class="skill-logo">
+                <p>JavaScript</p>
+            </div>
+            <!-- Skill Block 4: React -->
+            <div class="skill-block">
+                <img src="images/react.png" alt="React Logo" class="skill-logo">
+                <p>React</p>
+            </div>
+            <!-- Skill Block 5: Node.js -->
+            <div class="skill-block">
+                <img src="images/nodejs-logo.png" alt="Node.js Logo" class="skill-logo">
+                <p>Node.js</p>
+            </div>
+            <!-- Skill Block 6: Java -->
+            <div class="skill-block">
+                <img src="images/java-logo.png" alt="Java" class="skill-logo">
+                <p>Java</p>
+            </div>
+            <!-- Skill Block 7: Spring Boot -->
+            <div class="skill-block">
+                <img src="images/springboot-logo.png" alt="Spring Boot Logo" class="skill-logo">
+                <p>Spring Boot</p>
+            </div>
+            <!-- Skill Block 8: Python -->
+            <div class="skill-block">
+                <img src="images/python-logo.png" alt="Python Logo" class="skill-logo">
+                <p>Python</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Contact Me Section -->
+<div id="contact">
+    <div class="contact-container">
+        <h2 class="subtitle">Contact Me</h2>
+        <div id="response-msg" style="margin-top: 10px;"></div>
+
+        <form id="contact-form" action="https://script.google.com/macros/s/AKfycbxrI_GQYAme9ZeZE7Phaeb_n6aU9qUzbnxr4tRE71bZexM-FNpt6dc0FvwRRl9p4a35/exec" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+            <div id="success-message" style="display:none; color: green; margin-top: 10px;">
+                Thank you! Your message has been sent.
+            </div>
+        </form>
+    </div>
+</div>
+
+
+     
+</body>
+<script src = "script.js"> </script>
+</html>

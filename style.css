@@ -1,0 +1,301 @@
+*{
+    padding :0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT';
+}
+
+body{
+    background-color: beige;
+    color: black;
+}
+.container{
+    padding: 10px;
+    
+}
+nav{
+    display : flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap : wrap;
+}
+nav p{color:#4c2b08; 
+    font-size: 50px; 
+    padding : 10px;}
+
+.nav-bar ul li{
+    list-style: none;
+    display: inline-block;
+    padding : 50px;
+}
+nav ul li a{
+    color : #4c2b08;
+    text-decoration:none ;
+    font-size: 22px;
+    position :relative;
+}
+nav ul li a::after{
+    content :"";
+    width:0px;
+    height: 4px;
+    background: #4c2b08;
+    position:absolute;
+    left:0;
+    bottom : -7px;
+    transition: 0.7s;
+}
+ nav ul li a:hover::after{
+    width: 100%;
+}
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+    padding: 30px;
+}
+.header-text p{
+    font-size: 30px;
+    color: #4c2b08;   
+}
+.header-text h1 span{
+    color: #b6885d;
+}
+.content-home{
+    display: flex;
+    align-items: center;      
+    justify-content: space-between;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+.intro-image{
+    @media (max-width: 768px) {
+        .intro-image {
+            width: 100%;
+        }
+    }
+}  
+
+
+
+/* About me styling */
+
+/* About Me Section Layout - Ensuring Responsiveness */
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1 {
+    flex: 1;
+    max-width: 45%;
+}
+
+.about-col-1 img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about-col-2 {
+    flex: 1;
+    max-width: 50%;
+    padding-left: 30px;
+}
+
+.subtitle-me {
+    font-size: 50px;
+    color: #4c2b08;
+    margin-bottom: 20px;
+}
+
+.para-about{
+    padding: 20px;
+    font-size: 22px;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+/* Tab Navigation */
+.tab-titles {
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.tab-links {
+    font-weight: 600;
+    color: #555;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #4c2b08;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+.tab-links.active-link::after {
+    width: 100%;
+}
+
+/* Tab Contents */
+.tab-contents {
+    display: none;
+    margin-top: 20px;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
+
+.tab-contents ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.tab-contents ul li {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.tab-contents ul li span {
+    font-weight: bold;
+    color: #4c2b08;
+}
+
+/* Media Query for Small Screens (Mobile) */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column; /* Stack the columns vertically */
+    }
+
+    .about-col-1,
+    .about-col-2 {
+        max-width: 100%; /* Make both columns take full width */
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .subtitle {
+        font-size: 28px;
+    }
+}
+
+
+
+/* Skills */
+#my-skills {
+    padding: 50px 0;
+}
+
+.skillwholecontainer {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.subtitle-skills {
+    font-size: 32px;
+    color: #4c2b08;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    text-align: center;
+}
+
+.skill-block {
+    flex: 0 1 calc(25% - 30px); /* 4 in a row with gap adjustment */
+    max-width: calc(25% - 30px);
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.skill-block:hover {
+    transform: translateY(-10px);
+}
+
+.skill-logo {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.skill-block p {
+    font-size: 18px;
+    color: #4c2b08;
+    font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .skill-block {
+        flex: 0 1 calc(50% - 30px); /* 2 per row on tablets */
+    }
+}
+
+@media (max-width: 600px) {
+    .skill-block {
+        flex: 0 1 100%; /* Full width on mobile */
+    }
+}
+
+
+/* Contact me section..... */
+#contact {
+    background: #fff;
+    padding: 50px 0;
+    color: #241507;
+}
+.contact-container {
+    padding:80px;
+    margin: 30px;
+    text-align: center;
+
+}
+
+
+#contact form {
+    
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+#contact input, #contact textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+#contact button {
+    padding: 12px;
+    background-color: #4c2b08;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+#contact button:hover {
+    background-color: #241507;
+}
